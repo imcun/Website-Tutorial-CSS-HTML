@@ -19,9 +19,11 @@ nav{
     justify-content: space-between;
     align-items: center;
 
+
 }
 nav img{
     width: 150px;
+    align-items: center;
 }
 .nav-links{
     flex: 1;
@@ -57,4 +59,41 @@ nav img{
 .nav-links ul li :hover:after{
     width: 100%;
     left: 0;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    bottom: 50%;
+    transform: translate( right -50% left -50%);   
+}
+.text-box h1{
+    font-size: 52px;
+    text-align: center;
+    width:100%;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 16px;
+    text-align: center;
+    width:100%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn :hover{
+    border: 1px solid #ffffff;
+    background: #d7fa3b;
+    transition: 1s;
+    
 }

@@ -16,8 +16,8 @@
     
         <nav>
             <a href="index.html"> <img src="eduford_img/logo.png"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li> <a href="">HOME</a></li>
                     <li> <a href="">ABOUT</a></li>
@@ -26,7 +26,7 @@
                     <li> <a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
              <div class="text-box">
                 <h1>Best University For Your Dream</h1>
@@ -34,5 +34,71 @@
                 <a href="" class="hero-btn">Visit Us For More</a>
              </div>
     </section>
+<!--Course-->
+<section class="course">
+    <h1>Courses We Offering</h1>
+    <p>Expert anything is an accumulation of making many mistakes.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Beginners</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam temporibus accusamus repellat vero exercitationem repudiandae quasi atque laboriosam. Illo corrupti 
+                et molestias quae odio aliquam magni mollitia c
+                umque expedita aut?</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam temporibus accusamus repellat vero exercitationem repudiandae quasi atque laboriosam. Illo corrupti 
+                et molestias quae odio aliquam magni mollitia c
+                umque expedita aut?</p>
+        </div>
+        <div class="course-col">
+            <h3>Expertise</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Numquam temporibus accusamus repellat vero exercitationem repudiandae quasi atque laboriosam. Illo corrupti 
+                et molestias quae odio aliquam magni mollitia c
+                umque expedita aut?</p>
+        </div>
+    </div>
+</section>
+
+<!----campus---->
+
+<section class="campus">
+    <h1>Our International Campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maxime et cupiditate sit. Dolorum minus cumque inventore, molestias illo maxime dolor nostrum, aut ipsum 
+        commodi totam, voluptas rerum harum blanditiis!</p>
+    <div class="row1">
+        <div class="campus-col">
+            <img src="eduford_img/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+            <div class="campus-col">
+                <img src="eduford_img/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+                </div>
+            <div class="campus-col">
+                <img src="eduford_img/washington.png">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Javascript Toogle Menu-->
+<script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script>
 </body>
 </html>
